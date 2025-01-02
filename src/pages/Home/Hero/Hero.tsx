@@ -4,6 +4,7 @@ import Avatar from "../../../assets/images/perfil.jpg";
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 import EmailIcon from '@mui/icons-material/Email';
+import StyledButton from "../../../components/styledButton/StyledButon";
 
 
 const Hero = () => {
@@ -14,8 +15,8 @@ const Hero = () => {
   }));
 
 
-  const StyledHero = styled('div')(() => ({
-    backgroundColor: 'black',
+  const StyledHero = styled('div')(({theme}) => ({
+    backgroundColor: theme.palette.primary.dark,
     height: "100vh"
   }));
 
@@ -28,15 +29,20 @@ const Hero = () => {
       <StyledImg src={Avatar} alt="perfil" />
       </Grid>
       <Grid item xs={12} md={8}>
-        <Typography color="primary" variant="h1" textAlign="center">Angelo Marcos</Typography>
-        <Typography color="primary"  variant="h2" textAlign="center">I´m Software Engineer</Typography>
+        <Typography color='#abd726' variant="h1" textAlign="center">Angelo Marcos</Typography>
+        <Typography color='primary.contrastText'  variant="h2" textAlign="center">I´m Software Engineer</Typography>
         
-        <Grid container display="flex" justifyContent="center">
+        <Grid container display="flex"   justifyContent="center">
             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-            <Button><FileDownloadIcon/>Download CV</Button>
+            <StyledButton>
+              <FileDownloadIcon />
+             <Typography> Download CV</Typography>
+              </StyledButton>
             </Grid>
             <Grid item xs={12} md={4} display="flex" justifyContent="center"> 
-            <Button><EmailIcon/>Contact me</Button>
+            <StyledButton>
+              <EmailIcon/>Contact me
+              </StyledButton>
         </Grid>
         </Grid>
         
