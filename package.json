@@ -1,7 +1,7 @@
 {
   "name": "codestation",
-  "homepage": "https://{angelo.marcos.oi}.github.io/{AngeloMarcosPortifolio}",
-  "private": true,
+  "homepage": "https://AngeloMarcos.github.io/AngeloMarcosPortifolio",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
