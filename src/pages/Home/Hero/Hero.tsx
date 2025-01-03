@@ -51,7 +51,7 @@ const Hero = () => {
         
         <Grid container display="flex"   justifyContent="center" spacing={4}>
             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-            <StyledButton>
+            <StyledButton onClick={() => console.log("download")}>
               <FileDownloadIcon />
              <Typography> Download CV</Typography>
               </StyledButton>
@@ -59,7 +59,7 @@ const Hero = () => {
             <Grid item xs={12} md={4} display="flex" justifyContent="center"> 
             <StyledButton>
               <EmailIcon/>
-              <Typography>Contact me</Typography>
+              <Typography onClick={() => console.log("contact me")}>Contact me</Typography>
               </StyledButton>
         </Grid>
         </Grid>
