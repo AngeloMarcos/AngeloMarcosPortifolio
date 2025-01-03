@@ -1,7 +1,7 @@
 import { styled, useTheme } from "@mui/material";
 import React, { ReactNode } from "react";
 
-interface StyledButtonProps {
+interface StyledButtonProps {l
   children: ReactNode;
 }
 
@@ -17,6 +17,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children }) => {
     width: "100%",
     color: "#abd726",
     display: "inline-flex",
+    marginTop :"30px",
     alignItems: "center",
     gap: "10px",
     '&:hover': {
